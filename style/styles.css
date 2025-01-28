@@ -1,0 +1,212 @@
+/* Reset dan style dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #fff;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+/* Header */
+header {
+    background-color: #1a1a1a;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffee00;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: url('https://via.placeholder.com/1920x800') no-repeat center center/cover;
+    color: #fff;
+    position: relative;
+}
+
+#background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* Menjaga agar video menutupi seluruh area tanpa merubah rasio */
+    z-index: -1;  /* Menempatkan video di bawah teks */
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.hero .cta-button {
+    background-color: #0004ff;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+.hero .cta-button:hover {
+    background-color: #ffe600;
+}
+
+/* Fitur dan Game Section */
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+    background-color: #1a1a1a;
+    text-align: center;
+}
+
+.features .feature {
+    width: 30%;
+}
+
+.features h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.features p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Komunitas Section */
+.community {
+    text-align: center;
+    background-color: #2a2a2a;
+    padding: 60px 20px;
+}
+
+.community h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.community p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.community .cta-button {
+    background-color: #ff5e57;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.community .cta-button:hover {
+    background-color: #ff2a16;
+}
+
+/* Download Section */
+.download {
+    text-align: center;
+    background-image: url('gambar/war.jpg'); /* Menambahkan gambar latar belakang */
+    background-size: cover; /* Agar gambar menutupi seluruh bagian */
+    background-position: center; /* Agar gambar terletak di tengah */
+    padding: 50px 20px;
+
+}
+
+.download h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.download p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.download .download-btn {
+    background-color: #ff0000;
+    color: white;
+    padding: 15px 40px;
+    font-size: 18px;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.download .download-btn:hover {
+    background-color: #33ff00;
+}
+
+/* Footer */
+footer {
+    background-color: #121212;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    color: #ff0d00;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .features {
+        flex-direction: column;
+    }
+    
+    .features .feature {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
